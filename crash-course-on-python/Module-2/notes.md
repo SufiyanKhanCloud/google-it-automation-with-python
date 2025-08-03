@@ -1,55 +1,48 @@
-# Google IT Automation with Python  
-## Course 1 – Module 2: Python Syntax, Semantics & Conditionals
+# Google IT Automation with Python
+## Course 1 – Module 2: Python Syntax, Semantics, and Conditionals
 
 ---
 
 ## 1. Python Syntax & Semantics
 
-### Syntax
-- Structure and rules for writing Python code.
-- Includes **keywords**, **punctuation**, and **formatting**.
-- Errors in syntax prevent code execution (SyntaxError).
+**Syntax**: The set of rules that defines the structure of Python code (like grammar in human languages).  
+**Semantics**: The meaning behind that structure (logic of the code).  
 
-### Semantics
-- The meaning or logic behind the code.
-- Even if syntax is correct, poor semantics can produce incorrect results.
+**Core Syntax Elements:**
+- **Variables**: Store data (strings, integers, floats, lists, dicts, tuples, objects)
+- **Keywords**: Reserved words for specific purposes (`if`, `else`, `def`, `return`, etc.)
+- **Operators**: Perform operations (`==`, `<`, `>`, `%`, `//`, `/`, `**`, `+`, `-`, `*`)
+- **Functions**: Reusable blocks of code
+- **Expressions**: Combinations of values, variables, and operators that return a result
 
-> **DevOps relevance:** Clear syntax and semantics are crucial for writing automation scripts that deploy infrastructure, configure servers, or trigger CI/CD pipelines.
-
----
-
-## 2. Variables, Keywords & Operators
-
-### Variables
-- Store values such as strings, numbers, lists, or objects.
-- Follow **naming conventions**:
-  - `snake_case` for variables/functions.
-  - Cannot start with a number.
-  - Avoid spaces or special symbols.
-
-### Keywords
-- Reserved words like `if`, `else`, `def`, `return`.
-- Cannot be used as variable names.
-
-### Operators
-- **Arithmetic:** `+ - * / % // **`
-- **Comparison:** `== != > < >= <=`
-- **Logical:** `and or not`
+*DevOps Relevance*: Clean syntax and correct semantics ensure scripts for automation, deployment, and monitoring run reliably without errors.
 
 ---
 
-## 3. Data Types & Type Conversion
+## 2. Naming Rules & Conventions
+- No spaces in names
+- May use upper/lower case, numbers (not as first character)
+- Use **snake_case** for variables/functions
+- Use descriptive names (e.g., `server_status` instead of `ss`)
 
-### Built-in Types
-- `str`, `int`, `float`, `bool`
-- Use `type()` to check type.
+*DevOps Relevance*: Readable variable names help when collaborating on CI/CD scripts or infrastructure-as-code templates.
 
-### Type Conversion
-- **Implicit:** Python converts automatically when safe.
-- **Explicit:** Use `str()`, `int()`, `float()` to convert manually.
+---
 
+## 3. Data Types & Conversions
+
+**Common Data Types:**
+- `str` (String)
+- `int` (Integer)
+- `float` (Decimal numbers)
+- `bool` (True/False)
+- `list`, `tuple`, `dict`, `set`
+
+**Type Conversion:**
+- **Implicit**: Python converts automatically (`int` to `float`)
+- **Explicit**: Manually convert using `str()`, `int()`, `float()`
+
+Example:
 ```python
-room_rate = 100
-tax = room_rate * 0.08
-total = room_rate + tax
-print("Total cost: " + str(total))
+area = (base * height) / 2
+print("Area: " + str(area))
