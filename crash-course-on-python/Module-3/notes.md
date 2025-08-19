@@ -1,8 +1,7 @@
 
 # 📘 Module 3 Notes — Google IT Automation with Python
 
-## Using Python to Interact with the Operating System
-
+## LOOPS
 ---
 
 ## 🔁 1. While Loops
